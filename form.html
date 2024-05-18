@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Formulario entradas | Music Landing Page</title>
+</head>
+<body class="text-bg-light">
+    <nav class="navbar bg-light navbar-expand-lg border-bottom" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand p-0 " href="index.html">
+            <img src="./img/logo.png"width="70" alt="LOGO HTML&CSS"> <span class="align-middle pe-3 border-end">Music Studio</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html"><i class="bi bi-house"></i> Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"  href="form.html"><i class="bi bi-house"></i> Entradas</a>
+              </li>
+            </ul>
+          </div>
+          
+        </div>
+    </nav>
+    
+    <main class="container mt-3 border rounded">
+      <div>
+        
+      </div>
+        <!--LAYOUT 2 COLUMNAS-->
+        <div class="row">
+            <div class="col text-bg-light mb-3">
+                <p class="fs-3">Feedback</p>
+                <!--INICIO FORMULARIO-->
+                <form class="needs-validation" novalidate="">
+                    <div class="row g-3">
+                      <div class="col-sm-6">
+                        <label for="firstName" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid first name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                          Valid last name is required.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="username" class="form-label">Username</label>
+                        <div class="input-group has-validation">
+                          <span class="input-group-text">@</span>
+                          <input type="text" class="form-control" id="username" placeholder="Username" required="">
+                        <div class="invalid-feedback">
+                            Your username is required.
+                          </div>
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                          Please enter a valid email address for shipping updates.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address" class="form-label">Dirección</label>
+                        <input type="text" class="form-control" id="address" placeholder="c/Mayor Valencia" required="">
+                        <div class="invalid-feedback">
+                          Please enter your shipping address.
+                        </div>
+                      </div>
+          
+                      <div class="col-12">
+                        <label for="address2" class="form-label">Dirección 2 <span class="text-body-secondary">(Opcional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Bajo, apartado, polígono, ...">
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="country" class="form-label">Web</label>
+                        <select class="form-select" id="country" required="">
+                          <option value="">Elige...</option>
+                          <option>Mastermind</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid country.
+                        </div>
+                      </div>
+          
+                      <div class="col-md-6">
+                        <label for="state" class="form-label">Categoría</label>
+                        <select class="form-select" id="state" required="">
+                          <option value="">Elige...</option>
+                          <option>Desarrollo</option>
+                          <option>Informática</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please provide a valid state.
+                        </div>
+                      </div>
+          
+                    </div>
+          
+                    <hr class="my-4">
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Explícate</span>
+                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                    </div>
+
+                    <button class="w-100 btn btn-primary btn-lg mb-3" type="submit">Enviar</button>
+                  </form>
+                <!--FIN FORMULARIO-->
+            </div>
+
+        </div>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
+    <script src="./js/app.js"></script>
+</body>
+</html>
